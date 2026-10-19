@@ -1,0 +1,1122 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nacre · Onglerie à Tanger, Malabata</title>
+<meta property="og:image" content="https://salimbennani39.github.io/nacre-tanger/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Onglerie Nacre à Tanger, Malabata : manucure japonaise, BIAB, semi-permanent, nail art, pédicure spa et soins des pieds. Réservez sur WhatsApp.">
+<meta name="theme-color" content="#0B0F1C">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23E2D9C8'/%3E%3Cg fill='%23A85145' transform='translate(9 6) scale(.19)'%3E%3Crect x='62' y='30' width='120' height='8'/%3E%3Cpath d='M120 30h26v260c0 36-20 56-48 56-18 0-30-8-34-20 10 6 20 8 30 8 18 0 26-14 26-38z'/%3E%3Crect x='78' y='86' width='24' height='200'/%3E%3Crect x='56' y='86' width='90' height='6'/%3E%3Crect x='56' y='280' width='90' height='6'/%3E%3Cpath d='M146 86c68 0 90 54 90 99 0 47-22 101-90 101v-6c44 0 60-44 60-95 0-49-16-93-60-93z'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/front.webp">
+<link rel="stylesheet" href="scrollcraft.css">
+<style>
+/* ======================================================================
+   Nacre · tokens. Brand colours come from the logo (terracotta
+   monogram on ivory, ivory monogram on blush) and the salon interior.
+   ==================================================================== */
+:root {
+  --sc-canvas:     #F4EDE3;
+  --sc-surface:    #FBF7F1;
+  --sc-ink:        #2B1814;
+  --sc-ink-soft:   #6B4C44;
+  --sc-accent:     #A85145;
+  --sc-accent-ink: #FBF4EC;
+  --sc-font-display: "Cormorant Garamond", "Times New Roman", serif;
+  --sc-font-text:    "Outfit", system-ui, sans-serif;
+  --sc-font-mono:    "Outfit", system-ui, sans-serif;
+  --sc-shadow-color: 12 45% 18%;
+  --sc-e1: 0 1px 2px hsl(var(--sc-shadow-color) / .10), 0 2px 6px -1px hsl(var(--sc-shadow-color) / .10);
+  --sc-e2: 0 2px 4px hsl(var(--sc-shadow-color) / .10), 0 10px 22px -6px hsl(var(--sc-shadow-color) / .18);
+  --sc-e3: 0 4px 8px hsl(var(--sc-shadow-color) / .10), 0 22px 44px -10px hsl(var(--sc-shadow-color) / .24), 0 50px 90px -30px hsl(var(--sc-shadow-color) / .22);
+  --sc-edge: inset 0 1px 0 rgba(255,255,255,.55);
+
+  --night:  #0B0F1C;
+  --wine:   #2A1311;
+  --wine-2: #3A1B17;
+  --blush:  #CEA69E;
+  --blush-lt: #EFE2D3;
+  --ivory:  #F4EDE3;
+  --ivory-2:#E2D9C8;
+  --terra:  #A85145;
+  --terra-lt:#E39A86;
+  --gold:   #C9A45C;
+  --r: 14px;
+}
+html { background: var(--night); }
+body { background: var(--sc-canvas); }
+::selection { background: var(--terra); color: var(--ivory); }
+
+/* ---------------------------------------------------------- type ---- */
+.display {
+  font-family: var(--sc-font-display);
+  font-weight: 400;
+  line-height: .98;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+  margin: 0;
+}
+.display em { font-style: italic; font-weight: 400; }
+.d-xl { font-size: clamp(2.6rem, 1.4rem + 4.4vw, 5.6rem); }
+.d-lg { font-size: clamp(2.3rem, 1.3rem + 3.4vw, 4.6rem); }
+.d-md { font-size: clamp(1.9rem, 1.3rem + 2vw, 3.2rem); }
+.lede { font-size: var(--sc-t-lg); line-height: 1.5; margin: 0; text-wrap: pretty; }
+.body { line-height: 1.7; margin: 0; max-width: 58ch; text-wrap: pretty; color: var(--sc-ink-soft); }
+.kicker { font: 500 .78rem/1.2 var(--sc-font-text); letter-spacing: .22em; text-transform: uppercase; margin: 0; }
+
+/* ---------------------------------------------------------- buttons -- */
+.btn {
+  --b-bg: var(--terra); --b-ink: var(--ivory);
+  display: inline-flex; align-items: center; gap: .6em;
+  min-height: 48px; padding: .8em 1.5em;
+  border: 0; border-radius: 999px;
+  background: var(--b-bg); color: var(--b-ink);
+  font: 500 1rem/1 var(--sc-font-text); letter-spacing: .02em;
+  text-decoration: none; white-space: nowrap; cursor: pointer;
+  box-shadow: 0 1px 0 rgba(255,255,255,.18) inset, 0 8px 22px -8px rgba(90,30,20,.55);
+  transition: transform 160ms var(--sc-ease-out), background-color 160ms var(--sc-ease-out), box-shadow 160ms var(--sc-ease-out);
+}
+.btn svg { width: 1.1em; height: 1.1em; }
+@media (hover: hover) and (pointer: fine) {
+  .btn:hover { background: #963F34; transform: translateY(-1px); box-shadow: 0 1px 0 rgba(255,255,255,.18) inset, 0 12px 28px -8px rgba(90,30,20,.6); }
+}
+.btn:active { transform: scale(.97); }
+.btn:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+.btn--light { --b-bg: var(--ivory); --b-ink: var(--wine); }
+@media (hover: hover) and (pointer: fine) { .btn--light:hover { background: #fff; } }
+.btn[disabled] { opacity: .45; cursor: not-allowed; transform: none; }
+
+.link { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .25em; transition: opacity 140ms var(--sc-ease-out); }
+@media (hover: hover) and (pointer: fine) { .link:hover { opacity: .7; } }
+.link:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; border-radius: 3px; }
+
+/* ---------------------------------------------------------- chrome --- */
+.skip { position: absolute; left: 12px; top: -60px; z-index: 100; background: var(--ivory); color: var(--wine); padding: .6em 1em; border-radius: 8px; }
+.skip:focus { top: 12px; }
+.mark {
+  position: fixed; top: clamp(12px, 2.4vw, 26px); left: clamp(14px, 2.6vw, 30px); z-index: 70;
+  display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%;
+  background: color-mix(in oklab, var(--ivory) 92%, transparent);
+  color: var(--terra);
+  box-shadow: var(--sc-e2);
+  transition: transform 160ms var(--sc-ease-out);
+}
+.mark svg { width: 30px; height: 44px; }
+@media (hover: hover) and (pointer: fine) { .mark:hover { transform: scale(1.05); } }
+.mark:active { transform: scale(.96); }
+
+/* The appointment card: the page's navigation. It fills in as the visitor
+   chooses and it IS the way to book. */
+.ticket {
+  position: fixed; z-index: 70;
+  left: 50%; bottom: max(14px, env(safe-area-inset-bottom));
+  translate: -50% 0;
+  display: flex; align-items: center; gap: 14px;
+  width: min(640px, calc(100vw - 24px));
+  padding: 8px 8px 8px 10px;
+  border-radius: 999px;
+  background: color-mix(in oklab, #FBF7F1 94%, transparent);
+  color: var(--sc-ink);
+  box-shadow: 0 1px 0 rgba(255,255,255,.7) inset, var(--sc-e3);
+  transition: opacity 280ms var(--sc-ease-out), transform 280ms var(--sc-ease-out);
+}
+.ticket.is-hidden { opacity: 0; transform: translateY(24px); pointer-events: none; }
+.ticket__swatch {
+  flex: none; width: 44px; height: 44px; border-radius: 50%; overflow: hidden;
+  background: var(--ivory-2); display: grid; place-items: center; color: var(--terra);
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--ivory-2);
+}
+.ticket__swatch img { width: 100%; height: 100%; object-fit: cover; }
+.ticket__swatch svg { width: 20px; height: 20px; }
+.ticket__rows { flex: 1; min-width: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 2px 14px; }
+.ticket__k { display: block; font-size: .68rem; letter-spacing: .16em; text-transform: uppercase; color: var(--sc-ink-soft); }
+.ticket__v { display: block; font: 500 .95rem/1.25 var(--sc-font-text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ticket__v.is-empty { color: var(--sc-ink-soft); font-weight: 400; }
+.ticket__cell { display: block; min-width: 0; padding: 6px 10px; margin: -6px -10px; border: 0; border-radius: 12px; background: transparent; color: inherit; text-align: left; text-decoration: none; font: inherit; cursor: pointer; transition: background-color 140ms var(--sc-ease-out); }
+@media (hover: hover) and (pointer: fine) { .ticket__cell:hover { background: rgba(168,81,69,.08); } }
+.ticket__cell:active { background: rgba(168,81,69,.14); }
+.ticket__cell:focus-visible { outline: 2px solid var(--terra); outline-offset: 0; }
+.ticket__cell--soin .ticket__v.is-empty { color: var(--terra); text-decoration: underline; text-underline-offset: .2em; text-decoration-thickness: 1px; }
+.ticket__caret { display: inline-block; width: 12px; height: 12px; vertical-align: -1px; margin-left: 2px; transition: transform 160ms var(--sc-ease-out); }
+.ticket__cell--soin[aria-expanded="true"] .ticket__caret { transform: rotate(180deg); }
+.ticket__menu {
+  position: absolute; bottom: calc(100% + 10px); left: 50%; translate: -50% 0; z-index: 2;
+  width: min(320px, calc(100vw - 24px)); padding: 10px; border-radius: 18px;
+  background: #FBF7F1; box-shadow: 0 1px 0 #fff inset, var(--sc-e3);
+  display: grid; gap: 2px; transform-origin: 50% 100%;
+  animation: menuIn 180ms var(--sc-ease-out);
+}
+.ticket__menu[hidden] { display: none; }
+@keyframes menuIn { from { opacity: 0; transform: translateY(6px) scale(.98); } to { opacity: 1; transform: none; } }
+.ticket__menu-h { margin: 4px 10px 6px; font-size: .7rem; letter-spacing: .16em; text-transform: uppercase; color: var(--sc-ink-soft); }
+.ticket__menu button { display: flex; align-items: center; justify-content: space-between; min-height: 44px; padding: 0 12px; border: 0; border-radius: 10px; background: transparent; color: var(--sc-ink); font: 400 1rem/1 var(--sc-font-text); text-align: left; cursor: pointer; transition: background-color 120ms var(--sc-ease-out); }
+@media (hover: hover) and (pointer: fine) { .ticket__menu button:hover { background: rgba(168,81,69,.08); } }
+.ticket__menu button:active { background: rgba(168,81,69,.16); }
+.ticket__menu button:focus-visible { outline: 2px solid var(--terra); outline-offset: -2px; }
+.ticket__menu button[aria-checked="true"] { color: var(--terra); font-weight: 500; }
+.ticket__menu button[aria-checked="true"]::after { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--terra); }
+.ticket .btn { min-height: 46px; padding-inline: 1.3em; }
+.ticket.is-bump .ticket__swatch { animation: bump 520ms var(--sc-ease-out); }
+@keyframes bump { 0% { transform: scale(.8); } 60% { transform: scale(1.12); } 100% { transform: scale(1); } }
+@media (max-width: 560px) {
+  .ticket { gap: 10px; }
+  .ticket__v { font-size: .85rem; }
+  .ticket__k { font-size: .6rem; letter-spacing: .1em; white-space: nowrap; }
+  .ticket .btn { padding-inline: 1em; }
+}
+
+/* ============================================================ HERO ===
+   Five planes: salon interior (far), warm spill, facade with sliding
+   doors (mid), headline, foreground leaves (near).                    */
+.hero { background: var(--night); color: var(--ivory); }
+.hero [data-sc-stage] { background: var(--night); }
+.hero__inside {
+  position: absolute; inset: 0; z-index: 1;
+  transform-origin: 50% 50%;
+  will-change: transform;
+}
+.hero__box {
+  position: absolute; left: 0; top: 0; z-index: 3;
+  width: 100px; height: 100px;              /* set by layout() */
+  transform-origin: 29.73% 64.98%;          /* the doors */
+  will-change: transform, opacity;
+}
+.hero__front {
+  position: absolute; inset: 0; width: 100%; height: 100%; max-width: none;
+}
+/* Edges blend into the night with OPAQUE colour, never transparency, so the
+   salon behind can only ever be seen through the doorway. */
+.hero__fade { position: absolute; inset: -1px; pointer-events: none;
+  background:
+    linear-gradient(to right, var(--night) 0, rgba(11,15,28,0) 7%, rgba(11,15,28,0) 93%, var(--night) 100%),
+    linear-gradient(to bottom, var(--night) 0, rgba(11,15,28,0) 11%); }
+/* the night lawn continues below the photograph on tall phones */
+.hero__ground { position: absolute; left: -50%; right: -50%; top: 99.6%; height: 160vh; background: linear-gradient(#16160B, var(--night) 30%); }
+/* the sliding doors travel inside their own glazed bay */
+.hero__bay { position: absolute; left: 15.625%; top: 49.31%; width: 27.34%; height: 31.34%; overflow: hidden; }
+.hero__leaf { position: absolute; top: 0; height: 100%; max-width: none; will-change: transform; }
+.hero__leaf--l { left: 25.24%; width: 26.0%; }
+.hero__leaf--r { left: 51.24%; width: 26.67%; }
+.hero__spill {
+  position: absolute; z-index: 2; left: 0; top: 0; width: 60vmax; height: 60vmax;
+  margin: -30vmax 0 0 -30vmax; border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(255,196,120,.55), rgba(255,170,90,.18) 55%, transparent 100%);
+  opacity: 0; pointer-events: none; will-change: transform, opacity;
+}
+.hero__leaves {
+  position: absolute; z-index: 5; left: -3vw; bottom: -4vh;
+  height: min(44vh, 520px); width: auto; max-width: none;
+  pointer-events: none; will-change: transform, opacity;
+  transform-origin: 0% 100%;
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 22%), linear-gradient(to top, transparent 0, #000 14%);
+  -webkit-mask-composite: source-in;
+          mask-image: linear-gradient(to right, transparent 0, #000 22%), linear-gradient(to top, transparent 0, #000 14%);
+          mask-composite: intersect;
+  filter: brightness(.72) saturate(.9);
+}
+.hero__copy {
+  position: absolute; z-index: 4; left: 50%; top: clamp(3.4rem, 7vh, 5.5rem);
+  translate: -50% 0; width: min(64rem, calc(100vw - 2 * var(--sc-gutter)));
+  text-align: center;
+}
+.hero__copy h1 { color: #FBF4EC; font-size: clamp(2.3rem, 1.1rem + 3.3vw, 4.5rem); }
+.hero__copy .lede { color: #E7DCCD; margin-top: .9rem; font-size: clamp(1rem, .9rem + .4vw, 1.25rem); }
+.hero__copy .btn { margin-top: 1.1rem; }
+.hero__scrim {
+  position: absolute; inset: 0; z-index: 4; pointer-events: none; opacity: 0;
+  background:
+    radial-gradient(60% 55% at 18% 80%, rgba(24,12,8,.55), transparent 70%),
+    linear-gradient(to right, rgba(24,12,8,.9) 0%, rgba(24,12,8,.84) 36%, rgba(24,12,8,.5) 54%, transparent 74%);
+}
+.hero__in {
+  position: absolute; z-index: 5; left: var(--sc-gutter); bottom: clamp(6.5rem, 16vh, 10rem);
+  max-width: min(31rem, 84vw); color: #FBF4EC;
+}
+.hero__in .lede { color: #EBDFD1; margin-top: 1rem; }
+
+/* ========================================================== NUANCIER ==
+   The peak. An authored silence on wine, then the fan of 22 real
+   manicures opens from a gold rivet and follows the visitor's hand.   */
+.fan-act { background: var(--wine); color: var(--ivory); }
+.fan-act [data-sc-stage] { background: radial-gradient(120% 90% at 50% 100%, #4A211B 0%, var(--wine) 55%, #1C0C0B 100%); }
+.fan-hush {
+  position: absolute; inset: 0; display: grid; place-items: center; z-index: 2;
+  text-align: center; padding: 0 var(--sc-gutter); pointer-events: none;
+}
+.fan-hush p { font-family: var(--sc-font-display); font-style: italic; font-weight: 300; font-size: clamp(2.2rem, 1.4rem + 3.6vw, 5rem); line-height: 1.05; color: #F3E6D8; margin: 0; }
+.fan-head { position: absolute; z-index: 4; left: var(--sc-gutter); top: clamp(5.5rem, 12vh, 8rem); max-width: 26rem; }
+.fan-head .body { color: #D9C4B8; margin-top: .8rem; }
+.fan-pick {
+  position: absolute; z-index: 4; right: var(--sc-gutter); top: clamp(5.5rem, 12vh, 8rem);
+  width: min(20rem, 40vw); text-align: right;
+}
+.fan-pick__label { font-size: .7rem; letter-spacing: .2em; text-transform: uppercase; color: #CDB3A6; }
+.fan-pick__name { font-family: var(--sc-font-display); font-style: italic; font-size: clamp(1.9rem, 1.3rem + 1.8vw, 3rem); line-height: 1; margin: .35rem 0 .3rem; color: #FBF1E6; }
+.fan-pick__meta { color: #D9C4B8; font-size: .95rem; }
+.fan-pick__ok { display: inline-flex; gap: .45em; align-items: center; margin-top: .7rem; font-size: .9rem; color: var(--terra-lt); opacity: 0; transform: translateY(6px); transition: opacity 240ms var(--sc-ease-out), transform 240ms var(--sc-ease-out); }
+.fan-pick.is-picked .fan-pick__ok { opacity: 1; transform: none; }
+.fan-pick__ok svg { width: 1em; height: 1em; }
+.fan-wrap { position: absolute; inset: 0; z-index: 3; touch-action: pan-y; }
+.fan {
+  --bw: clamp(78px, 6.6vw, 124px);
+  --bh: min(60vh, 600px);
+  position: absolute; left: 50%; bottom: calc(96px + 5vh); width: 0; height: 0;
+  will-change: transform, opacity;
+}
+.blade {
+  position: absolute; left: calc(var(--bw) / -2); bottom: calc(var(--bw) / -2);
+  width: var(--bw); height: var(--bh);
+  transform-origin: 50% calc(100% - var(--bw) / 2);
+  padding: 0; border: 0; background: none; cursor: pointer;
+  will-change: transform;
+}
+.blade__body {
+  position: absolute; inset: 0; border-radius: calc(var(--bw) / 2) calc(var(--bw) / 2) calc(var(--bw) / 2) calc(var(--bw) / 2);
+  background: linear-gradient(180deg, #FBF6EF 0%, #F1E7DA 100%);
+  box-shadow: 0 1px 0 #fff inset, -3px 0 6px -2px rgba(40,10,6,.35), 0 18px 30px -18px rgba(0,0,0,.6);
+  overflow: hidden;
+  transition: box-shadow 200ms var(--sc-ease-out);
+}
+.blade__img { position: absolute; left: 6px; right: 6px; top: 6px; aspect-ratio: 3 / 4; width: calc(100% - 12px); height: auto; object-fit: cover; border-radius: calc(var(--bw) / 2 - 6px) calc(var(--bw) / 2 - 6px) 6px 6px; max-width: none; }
+.blade__name {
+  position: absolute; left: 50%; top: calc((var(--bw) - 12px) * 4 / 3 + 18px);
+  writing-mode: vertical-rl; transform: translateX(-50%) rotate(180deg);
+  font: 500 .72rem/1 var(--sc-font-text); letter-spacing: .14em; text-transform: uppercase; color: #6B4C44;
+  white-space: nowrap; max-height: calc(var(--bh) - (var(--bw) - 12px) * 4 / 3 - 70px); overflow: hidden;
+}
+.blade__dot { position: absolute; left: 50%; bottom: calc(var(--bw) / 2 - 7px); width: 14px; height: 14px; margin-left: -7px; border-radius: 50%; background: var(--c, #ccc); box-shadow: 0 0 0 2px #fff; }
+.blade.is-picked .blade__body { box-shadow: 0 0 0 3px var(--terra-lt), 0 1px 0 #fff inset, 0 24px 40px -16px rgba(0,0,0,.7); }
+.blade:focus-visible { outline: none; }
+.blade:focus-visible .blade__body { box-shadow: 0 0 0 3px var(--gold), 0 24px 40px -16px rgba(0,0,0,.7); }
+.rivet { position: absolute; left: -15px; bottom: -15px; width: 30px; height: 30px; border-radius: 50%; z-index: 99;
+  background: radial-gradient(circle at 35% 30%, #F6E2A6, #C9A45C 45%, #7C5A22 100%);
+  box-shadow: 0 2px 4px rgba(0,0,0,.5), 0 0 0 3px rgba(255,255,255,.08); }
+.fan-hint { position: absolute; z-index: 4; left: 50%; bottom: calc(9vh - 3.2rem); translate: -50% 0; margin: 0; color: #CDB3A6; font-size: .85rem; letter-spacing: .06em; white-space: nowrap; }
+.fan-steps { position: absolute; z-index: 5; left: 50%; bottom: calc(9vh - 4rem); translate: -50% 0; display: none; gap: 3.4rem; }
+.fan-steps button { width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(243,230,216,.35); background: rgba(243,230,216,.06); color: #F3E6D8; display: grid; place-items: center; cursor: pointer; transition: background-color 150ms var(--sc-ease-out), transform 150ms var(--sc-ease-out); }
+.fan-steps button:active { transform: scale(.94); }
+.fan-steps button:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+@media (hover: hover) and (pointer: fine) { .fan-steps button:hover { background: rgba(243,230,216,.14); } }
+.fan-steps svg { width: 18px; height: 18px; }
+
+/* ============================================================= SOINS == */
+.soins { background: var(--ivory); }
+.soins [data-sc-stage] { display: flex; align-items: center; background: var(--ivory); }
+.rail { gap: clamp(1rem, 2.2vw, 2rem); padding: 0 var(--sc-gutter); align-items: stretch; }
+.rail__lead { flex: none; width: min(26rem, 78vw); align-self: center; padding-right: 2vw; }
+.rail__lead .body { margin-top: 1rem; }
+.soin {
+  flex: none; width: clamp(15rem, 23vw, 21rem);
+  display: flex; flex-direction: column;
+  background: var(--sc-surface); border-radius: var(--r);
+  box-shadow: var(--sc-edge), var(--sc-e2);
+  overflow: hidden;
+}
+.soin__media { position: relative; aspect-ratio: 4 / 5; overflow: hidden; }
+.soin__media img { width: 100%; height: 100%; object-fit: cover; transition: transform 500ms var(--sc-ease-out); }
+.soin__media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(42,19,17,.35), transparent 45%); }
+@media (hover: hover) and (pointer: fine) { .soin:hover .soin__media img { transform: scale(1.04); } }
+.soin__body { padding: 1.1rem 1.2rem 1.2rem; display: flex; flex-direction: column; gap: .55rem; flex: 1; }
+.soin__body h3 { font-family: var(--sc-font-display); font-weight: 500; font-size: 1.7rem; line-height: 1; margin: 0; letter-spacing: -.01em; }
+.soin__body p { margin: 0; font-size: .95rem; line-height: 1.55; color: var(--sc-ink-soft); flex: 1; }
+.chip {
+  align-self: flex-start; display: inline-flex; align-items: center; gap: .5em; min-height: 44px;
+  padding: .55em 1.1em; border-radius: 999px; border: 1px solid color-mix(in oklab, var(--terra) 40%, transparent);
+  background: transparent; color: var(--terra); font: 500 .9rem/1 var(--sc-font-text); cursor: pointer;
+  transition: background-color 150ms var(--sc-ease-out), color 150ms var(--sc-ease-out), transform 150ms var(--sc-ease-out);
+}
+@media (hover: hover) and (pointer: fine) { .chip:hover { background: color-mix(in oklab, var(--terra) 10%, transparent); } }
+.chip:active { transform: scale(.97); }
+.chip:focus-visible { outline: 2px solid var(--terra); outline-offset: 2px; }
+.chip[aria-pressed="true"] { background: var(--terra); color: var(--ivory); border-color: var(--terra); }
+.chip svg { width: 1em; height: 1em; }
+.rail__end { flex: none; width: min(22rem, 76vw); align-self: center; }
+.rail__end .body { margin-top: .8rem; }
+
+/* =========================================================== HYGIENE == */
+.hyg { background: var(--blush-lt); padding-block: clamp(4.5rem, 9vw, 8rem); }
+.hyg__grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: clamp(2rem, 6vw, 6rem); align-items: center; }
+.hyg__list { list-style: none; padding: 0; margin: 1.6rem 0 0; display: grid; gap: .1rem; }
+.hyg__list li { display: flex; align-items: center; gap: .8rem; padding: .7rem 0; border-bottom: 1px solid rgba(107,76,68,.18); font-size: 1.05rem; }
+.hyg__list svg { flex: none; width: 22px; height: 22px; color: var(--terra); }
+.hyg__quote { margin: 1.6rem 0 0; font-family: var(--sc-font-display); font-style: italic; font-size: 1.35rem; line-height: 1.35; color: var(--sc-ink); }
+.hyg__quote cite { display: block; margin-top: .5rem; font: 400 .85rem/1.4 var(--sc-font-text); font-style: normal; color: var(--sc-ink-soft); }
+.ba { position: relative; aspect-ratio: 8 / 9; border-radius: var(--r); overflow: hidden; box-shadow: var(--sc-e3); user-select: none; touch-action: pan-y; background: #d9c3b8; }
+.ba img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; max-width: none; }
+.ba__after { clip-path: inset(0 0 0 var(--x, 50%)); }
+.ba__line { position: absolute; top: 0; bottom: 0; left: var(--x, 50%); width: 2px; margin-left: -1px; background: #fff; box-shadow: 0 0 0 1px rgba(0,0,0,.08); pointer-events: none; }
+.ba__knob { position: absolute; top: 50%; left: var(--x, 50%); width: 52px; height: 52px; margin: -26px 0 0 -26px; border-radius: 50%; background: #fff; color: var(--terra); display: grid; place-items: center; box-shadow: var(--sc-e2); pointer-events: none; }
+.ba__knob svg { width: 24px; height: 24px; }
+.ba__tag { position: absolute; top: 14px; padding: .35em .8em; border-radius: 999px; background: rgba(251,247,241,.92); font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; }
+.ba__tag--b { left: 14px; } .ba__tag--a { right: 14px; }
+.ba input { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: ew-resize; margin: 0; }
+.ba:has(input:focus-visible) { outline: 3px solid var(--terra); outline-offset: 4px; }
+.ba__cap { margin-top: .8rem; font-size: .85rem; color: var(--sc-ink-soft); }
+
+/* =========================================================== FOUNDER == */
+.founder { background: var(--terra); color: #FBF1E6; }
+.founder [data-sc-stage] { background: radial-gradient(90% 80% at 72% 40%, #AE5648 0%, var(--terra) 45%, #8E3F34 100%); }
+.founder__fig { position: absolute; z-index: 3; right: 9vw; top: 0; bottom: 0; width: 62vh; }
+.founder__mono { position: absolute; z-index: 1; left: 50%; top: 50%; height: 84vh; width: auto; margin: -44vh 0 0 -28vh; color: #C87867; will-change: transform; }
+.founder__floor { position: absolute; z-index: 2; left: 50%; bottom: 4.5vh; width: 30vh; height: 3.4vh; margin-left: -15vh; border-radius: 50%; background: radial-gradient(closest-side, rgba(60,18,12,.45), transparent); }
+.founder__name {
+  position: absolute; z-index: 2; left: var(--sc-gutter); top: clamp(5rem, 13vh, 8rem);
+  font-family: var(--sc-font-display); font-weight: 300; line-height: .86; letter-spacing: -.035em;
+  font-size: clamp(4.2rem, 2rem + 9vw, 11.5rem); color: #FBF1E6; margin: 0;
+  will-change: transform;
+}
+.founder__name span { display: block; }
+.founder__name span + span { padding-left: .5em; font-style: italic; }
+.founder__cut { position: absolute; z-index: 3; left: 50%; bottom: 5vh; height: 86vh; width: auto; max-width: none; translate: -50% 0; will-change: transform; filter: drop-shadow(-14px 12px 26px rgba(60,18,12,.28)); }
+.founder__text { position: absolute; z-index: 4; left: var(--sc-gutter); bottom: clamp(6.5rem, 15vh, 9rem); max-width: min(30rem, 44vw); }
+.founder__quote { margin: 0; font-family: var(--sc-font-display); font-style: italic; font-weight: 400; font-size: clamp(1.6rem, 1.1rem + 1.4vw, 2.4rem); line-height: 1.18; color: #FFF6EC; text-wrap: balance; }
+.founder__sig { margin-top: 1rem; font-size: .95rem; color: #F6E4D6; }
+.founder__links { margin-top: .9rem; display: flex; gap: 1.2rem; flex-wrap: wrap; font-size: .95rem; color: #FFF6EC; }
+.founder__work { position: absolute; z-index: 4; right: calc(8vw + 30vh); bottom: 12vh; width: clamp(8rem, 12vw, 11rem); aspect-ratio: 740 / 880; border-radius: 12px; overflow: hidden; box-shadow: var(--sc-e3); border: 4px solid #FBF7F1; rotate: -4deg; will-change: transform; }
+.founder__work img { width: 100%; height: 100%; object-fit: cover; }
+
+/* ============================================================== AVIS == */
+.avis { background: var(--ivory); padding-block: clamp(5rem, 10vw, 9rem); position: relative; overflow: clip; }
+.avis__big { font-family: var(--sc-font-display); font-style: italic; font-weight: 300; font-size: clamp(2.4rem, 1.2rem + 5vw, 6.2rem); line-height: .98; letter-spacing: -.025em; margin: 0; max-width: 16ch; color: var(--wine); }
+.avis__big-wrap { padding-bottom: .2em; }
+.avis__src { margin-top: 1.1rem; color: var(--sc-ink-soft); font-size: .95rem; }
+.avis__grid { margin-top: clamp(3rem, 6vw, 5rem); display: grid; grid-template-columns: repeat(12, 1fr); gap: clamp(1rem, 2vw, 1.6rem); align-items: start; }
+.rv { grid-column: span 4; background: var(--sc-surface); border-radius: var(--r); padding: 1.5rem 1.5rem 1.3rem; box-shadow: var(--sc-edge), var(--sc-e2); transition: transform 200ms var(--sc-ease-out), box-shadow 200ms var(--sc-ease-out); }
+@media (hover: hover) and (pointer: fine) { .rv:hover { transform: translateY(-3px); box-shadow: var(--sc-edge), var(--sc-e3); } }
+.rv:nth-child(1) { grid-column: 1 / span 5; }
+.rv:nth-child(2) { grid-column: 6 / span 4; margin-top: 3rem; }
+.rv:nth-child(3) { grid-column: 10 / span 3; margin-top: 1rem; }
+.rv:nth-child(4) { grid-column: 2 / span 5; }
+.rv:nth-child(5) { grid-column: 7 / span 5; margin-top: -1rem; }
+.rv__stars { display: flex; gap: 3px; color: var(--gold); }
+.rv__stars svg { width: 16px; height: 16px; }
+.rv blockquote { margin: .8rem 0 0; font-size: 1.02rem; line-height: 1.6; }
+.rv footer { margin-top: 1rem; display: flex; justify-content: space-between; gap: 1rem; font-size: .85rem; color: var(--sc-ink-soft); }
+.rv footer b { font-weight: 500; color: var(--sc-ink); }
+.avis__meta { margin-top: clamp(2.5rem, 5vw, 4rem); display: flex; flex-wrap: wrap; gap: 1rem 2.5rem; align-items: baseline; }
+.avis__count { font-family: var(--sc-font-display); font-size: clamp(2.4rem, 1.6rem + 2.4vw, 4rem); line-height: 1; color: var(--terra); }
+.avis__float { position: absolute; width: clamp(7rem, 11vw, 10rem); aspect-ratio: 3 / 4; border-radius: 999px 999px 14px 14px; overflow: hidden; box-shadow: var(--sc-e3); z-index: 0; }
+.avis__float img { width: 100%; height: 100%; object-fit: cover; }
+.avis__float--a { right: 6vw; top: 7rem; rotate: 6deg; }
+.avis__float--b { right: 17vw; top: 17rem; rotate: -5deg; width: clamp(5.5rem, 8vw, 7.5rem); }
+.avis .sc-wrap { position: relative; z-index: 1; }
+
+/* ======================================================= RENDEZ-VOUS == */
+.rdv { background: var(--wine); color: var(--ivory); padding-block: clamp(4.5rem, 9vw, 8rem) 0; position: relative; overflow: clip; }
+.rdv::before { content: ""; position: absolute; inset: 0; background: radial-gradient(70% 60% at 80% 0%, rgba(168,81,69,.35), transparent 70%); pointer-events: none; }
+.rdv .sc-wrap { position: relative; }
+.rdv__grid { display: grid; grid-template-columns: 1fr 1.15fr; gap: clamp(2rem, 6vw, 6rem); align-items: start; }
+.rdv__intro .body { color: #D9C4B8; margin-top: 1rem; }
+.card {
+  background: #FBF7F1; color: var(--sc-ink); border-radius: 22px; padding: clamp(1.3rem, 3vw, 2.2rem);
+  box-shadow: 0 1px 0 #fff inset, 0 30px 60px -20px rgba(0,0,0,.55), 0 10px 20px -10px rgba(0,0,0,.4);
+  position: relative;
+}
+.card::before, .card::after { content: ""; position: absolute; top: 118px; width: 22px; height: 22px; border-radius: 50%; background: var(--wine); }
+.card::before { left: -11px; } .card::after { right: -11px; }
+.card__top { display: flex; align-items: center; gap: 1rem; padding-bottom: 1.3rem; border-bottom: 1px dashed rgba(107,76,68,.35); min-height: 96px; }
+.card__look { width: 72px; height: 96px; flex: none; border-radius: 36px 36px 10px 10px; overflow: hidden; background: var(--ivory-2); display: grid; place-items: center; color: var(--terra); }
+.card__look img { width: 100%; height: 100%; object-fit: cover; }
+.card__look svg { width: 26px; height: 26px; }
+.card__k { font-size: .7rem; letter-spacing: .18em; text-transform: uppercase; color: var(--sc-ink-soft); }
+.card__lookname { font-family: var(--sc-font-display); font-size: 1.8rem; line-height: 1.05; margin: .2rem 0 .25rem; }
+.card__lookmeta { font-size: .9rem; color: var(--sc-ink-soft); }
+.form { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.1rem; margin-top: 1.3rem; }
+.field { display: grid; gap: .4rem; }
+.field--full { grid-column: 1 / -1; }
+.field label { font-size: .72rem; letter-spacing: .16em; text-transform: uppercase; color: var(--sc-ink-soft); }
+.field input, .field select {
+  appearance: none; -webkit-appearance: none; width: 100%; min-height: 50px; padding: .7rem .95rem;
+  border: 1px solid rgba(107,76,68,.28); border-radius: 12px; background: #fff; color: var(--sc-ink);
+  font: 400 1rem/1.2 var(--sc-font-text);
+  transition: border-color 150ms var(--sc-ease-out), box-shadow 150ms var(--sc-ease-out);
+}
+.field select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236B4C44' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right .8rem center; background-size: 18px; padding-right: 2.4rem; }
+.field input:hover, .field select:hover { border-color: rgba(107,76,68,.5); }
+.field input:focus-visible, .field select:focus-visible { outline: none; border-color: var(--terra); box-shadow: 0 0 0 3px color-mix(in oklab, var(--terra) 22%, transparent); }
+.field input[aria-invalid="true"], .field select[aria-invalid="true"] { border-color: #B3261E; }
+.form__err { grid-column: 1 / -1; min-height: 1.2em; margin: 0; color: #B3261E; font-size: .9rem; }
+.form__go { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.form__note { font-size: .85rem; color: var(--sc-ink-soft); margin: 0; max-width: 28ch; }
+.aside { margin-top: clamp(3rem, 6vw, 5rem); display: grid; grid-template-columns: 9rem 1fr; gap: 1.4rem; align-items: center; max-width: 36rem; }
+.aside img { width: 9rem; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 999px 999px 12px 12px; box-shadow: 0 20px 40px -18px rgba(0,0,0,.6); }
+.aside h3 { font-family: var(--sc-font-display); font-weight: 400; font-style: italic; font-size: 1.7rem; margin: 0; }
+.aside p { margin: .4rem 0 0; color: #D9C4B8; line-height: 1.6; }
+.foot { margin-top: clamp(4rem, 8vw, 6rem); border-top: 1px solid rgba(243,230,216,.16); padding-block: 2.2rem calc(2.2rem + 84px); display: grid; grid-template-columns: auto 1fr auto; gap: 1.5rem 3rem; align-items: start; font-size: .95rem; color: #D9C4B8; }
+.foot__mark { color: var(--ivory-2); width: 46px; height: 68px; }
+.foot address { font-style: normal; line-height: 1.7; }
+.foot ul { list-style: none; padding: 0; margin: 0; display: grid; gap: .45rem; }
+.foot a { color: #F3E6D8; }
+.foot__small { grid-column: 1 / -1; font-size: .78rem; color: #A58B80; }
+
+/* ============================================================ MOBILE == */
+@media (max-width: 860px) {
+  .hero__copy { top: clamp(4.6rem, 11svh, 6rem); }
+  .hero__copy .lede { max-width: 30ch; margin-inline: auto; }
+  .hero__leaves { height: 36svh; left: -14vw; bottom: -3svh; }
+  .hero__in { bottom: 7.5rem; }
+  .hero__scrim { background: linear-gradient(to top, rgba(24,12,8,.94) 0%, rgba(24,12,8,.88) 38%, rgba(24,12,8,.5) 58%, transparent 76%); }
+  .fan { --bw: clamp(50px, 13.5vw, 64px); --bh: min(36svh, 300px); bottom: 212px; }
+  .fan-head { top: 5.2rem; right: var(--sc-gutter); }
+  .fan-head .body { display: none; }
+  .fan-pick { top: auto; bottom: 92px; left: 64px; right: 64px; width: auto; text-align: center; }
+  .fan-pick__label, .fan-pick__ok { display: none; }
+  .fan-pick__meta { font-size: .85rem; }
+  .fan-pick__name { font-size: 1.7rem; }
+  .fan-hint { display: none; }
+  .fan-steps { display: flex; left: 10px; right: 10px; translate: none; bottom: 104px; justify-content: space-between; gap: 0; pointer-events: none; }
+  .fan-steps button { pointer-events: auto; }
+  .blade__name { font-size: .6rem; letter-spacing: .1em; }
+  .hyg__grid { grid-template-columns: 1fr; }
+  .founder__fig { right: -7vw; width: 50vw; top: auto; height: 64svh; bottom: 0; }
+  .founder__mono { height: 44svh; margin: -26svh 0 0 -15svh; }
+  .founder__floor { width: 26vw; margin-left: -13vw; bottom: 2svh; }
+  .founder__name { top: 5rem; font-size: clamp(3.4rem, 15vw, 5rem); }
+  .founder__cut { height: 58svh; bottom: 2.5svh; }
+  .founder__text { top: calc(5rem + 2 * 0.86 * clamp(3.4rem, 15vw, 5rem) + 1.2rem); bottom: auto; max-width: 49vw; }
+  .founder__quote { font-size: 1.35rem; }
+  .founder__links { flex-direction: column; gap: .35rem; }
+  .founder__work { display: none; }
+  .avis__grid { display: flex; flex-direction: column; }
+  .rv { margin-top: 0 !important; }
+  .avis__float { display: none; }
+  .rdv__grid { grid-template-columns: 1fr; }
+  .foot { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .form { grid-template-columns: 1fr; }
+  .card::before, .card::after { top: 112px; }
+}
+
+/* ==================================================== REDUCED MOTION == */
+@media (prefers-reduced-motion: reduce) {
+  .ticket, .btn, .chip, .rv, .soin__media img { transition: none; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#rdv">Aller à la réservation</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <mask id="jd-gap" maskUnits="userSpaceOnUse" x="0" y="0" width="240" height="360">
+      <rect width="240" height="360" fill="#fff"/><rect x="0" y="168" width="240" height="36" fill="#000"/>
+    </mask>
+  </defs>
+  <!-- Nacre monogram: a single N, cut by the wordmark band -->
+  <symbol id="jd" viewBox="0 0 240 360"><g fill="currentColor" mask="url(#jd-gap)"><svg x="40" y="60" width="160" height="240" viewBox="22 -629 701 651" preserveAspectRatio="xMidYMid meet"><g fill="currentColor"><path d="M125.0 -121.0V-602.0L152.0 -600.0V-121.0Q152.0 -68.0 173.0 -40.0Q194.0 -12.0 233.0 -12.0Q236.0 -12.0 236.0 -6.0Q236.0 0.0 233.0 0.0Q212.0 0.0 189.5 -1.0Q167.0 -2.0 140.0 -2.0Q111.0 -2.0 84.5 -1.0Q58.0 0.0 35.0 0.0Q32.0 0.0 32.0 -6.0Q32.0 -12.0 35.0 -12.0Q79.0 -12.0 102.0 -40.0Q125.0 -68.0 125.0 -121.0ZM633.0 14.0Q633.0 17.0 628.0 17.5Q623.0 18.0 621.0 17.0L140.0 -543.0Q104.0 -584.0 78.5 -598.5Q53.0 -613.0 29.0 -613.0Q26.0 -613.0 26.0 -619.0Q26.0 -625.0 29.0 -625.0Q48.0 -625.0 68.0 -624.0Q88.0 -623.0 105.0 -623.0Q135.0 -623.0 159.5 -624.0Q184.0 -625.0 197.0 -625.0Q210.0 -625.0 216.0 -613.5Q222.0 -602.0 246.0 -573.0L625.0 -127.0ZM633.0 -503.0V14.0L606.0 -16.0V-503.0Q606.0 -556.0 585.5 -584.5Q565.0 -613.0 525.0 -613.0Q523.0 -613.0 523.0 -619.0Q523.0 -625.0 525.0 -625.0Q546.0 -625.0 569.0 -623.5Q592.0 -622.0 619.0 -622.0Q645.0 -622.0 670.0 -623.5Q695.0 -625.0 716.0 -625.0Q719.0 -625.0 719.0 -619.0Q719.0 -613.0 716.0 -613.0Q676.0 -613.0 654.5 -584.5Q633.0 -556.0 633.0 -503.0Z"/></g></svg></g></symbol>
+  <symbol id="jd-solid" viewBox="0 0 240 360"><g fill="currentColor"><svg x="40" y="60" width="160" height="240" viewBox="22 -629 701 651" preserveAspectRatio="xMidYMid meet"><g fill="currentColor"><path d="M125.0 -121.0V-602.0L152.0 -600.0V-121.0Q152.0 -68.0 173.0 -40.0Q194.0 -12.0 233.0 -12.0Q236.0 -12.0 236.0 -6.0Q236.0 0.0 233.0 0.0Q212.0 0.0 189.5 -1.0Q167.0 -2.0 140.0 -2.0Q111.0 -2.0 84.5 -1.0Q58.0 0.0 35.0 0.0Q32.0 0.0 32.0 -6.0Q32.0 -12.0 35.0 -12.0Q79.0 -12.0 102.0 -40.0Q125.0 -68.0 125.0 -121.0ZM633.0 14.0Q633.0 17.0 628.0 17.5Q623.0 18.0 621.0 17.0L140.0 -543.0Q104.0 -584.0 78.5 -598.5Q53.0 -613.0 29.0 -613.0Q26.0 -613.0 26.0 -619.0Q26.0 -625.0 29.0 -625.0Q48.0 -625.0 68.0 -624.0Q88.0 -623.0 105.0 -623.0Q135.0 -623.0 159.5 -624.0Q184.0 -625.0 197.0 -625.0Q210.0 -625.0 216.0 -613.5Q222.0 -602.0 246.0 -573.0L625.0 -127.0ZM633.0 -503.0V14.0L606.0 -16.0V-503.0Q606.0 -556.0 585.5 -584.5Q565.0 -613.0 525.0 -613.0Q523.0 -613.0 523.0 -619.0Q523.0 -625.0 525.0 -625.0Q546.0 -625.0 569.0 -623.5Q592.0 -622.0 619.0 -622.0Q645.0 -622.0 670.0 -623.5Q695.0 -625.0 716.0 -625.0Q719.0 -625.0 719.0 -619.0Q719.0 -613.0 716.0 -613.0Q676.0 -613.0 654.5 -584.5Q633.0 -556.0 633.0 -503.0Z"/></g></svg></g></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3Z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m15 18-6-6 6-6"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m9 18 6-6-6-6"/></symbol>
+  <symbol id="i-lr" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m8 7-5 5 5 5M16 7l5 5-5 5"/></symbol>
+  <symbol id="i-hand" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M8 13V5.5a1.5 1.5 0 0 1 3 0V11m0-.5v-7a1.5 1.5 0 0 1 3 0V11m0-5.5a1.5 1.5 0 0 1 3 0V12m0-3.5a1.5 1.5 0 0 1 3 0V15a7 7 0 0 1-7 7h-1a7 7 0 0 1-5.6-2.8L3.3 15a1.6 1.6 0 0 1 2.5-2l2.2 2.4"/></symbol>
+</svg>
+
+<a class="mark" href="#top" aria-label="Nacre, retour en haut"><svg aria-hidden="true"><use href="#jd-solid"/></svg></a>
+
+<!-- The appointment card. It fills in as the visitor picks a look and a soin. -->
+<aside class="ticket" id="ticket" aria-label="Votre rendez-vous">
+  <span class="ticket__swatch" id="t-swatch" aria-hidden="true"><svg><use href="#i-hand"/></svg></span>
+  <div class="ticket__rows">
+    <a class="ticket__cell" href="#nuancier"><span class="ticket__k">Votre look</span><span class="ticket__v is-empty" id="t-look">À choisir</span></a>
+    <button class="ticket__cell ticket__cell--soin" type="button" id="t-soinBtn" aria-haspopup="true" aria-expanded="false" aria-controls="t-menu"><span class="ticket__k">Soin <svg class="ticket__caret" aria-hidden="true" viewBox="0 0 24 24"><path d="m6 15 6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="ticket__v is-empty" id="t-soin">À choisir</span></button>
+  </div>
+  <div class="ticket__menu" id="t-menu" role="menu" aria-label="Choisir un soin" hidden>
+    <p class="ticket__menu-h">Choisir un soin</p>
+    <button type="button" role="menuitemradio" aria-checked="false" data-pick="Manucure japonaise">Manucure japonaise</button>
+    <button type="button" role="menuitemradio" aria-checked="false" data-pick="BIAB">BIAB</button>
+    <button type="button" role="menuitemradio" aria-checked="false" data-pick="Vernis semi-permanent">Vernis semi-permanent</button>
+    <button type="button" role="menuitemradio" aria-checked="false" data-pick="Nail art">Nail art</button>
+    <button type="button" role="menuitemradio" aria-checked="false" data-pick="Pédicure spa">Pédicure spa</button>
+    <button type="button" role="menuitemradio" aria-checked="false" data-pick="Soin des pieds">Soin des pieds</button>
+    <button type="button" role="menuitemradio" aria-checked="false" data-pick="Manucure et pédicure">Manucure et pédicure</button>
+  </div>
+  <a class="btn" href="#rdv">Book now</a>
+</aside>
+
+<main id="top">
+
+  <!-- ============ 1 · ARRIVÉE : outside the real shopfront, then through the doors -->
+  <section id="arrivee" class="hero" data-sc-act="scrub" data-sc-span="3.2" aria-label="Arrivée">
+    <div data-sc-stage>
+      <div class="hero__inside" id="hInside">
+        <img class="sc-stage__poster" src="assets/glide-poster.jpg" alt="" width="1920" height="1080">
+        <video data-sc-scrub data-sc-src="assets/glide.mp4" data-sc-src-mobile="assets/glide-m.mp4" muted playsinline></video>
+      </div>
+      <div class="hero__spill" id="hSpill" aria-hidden="true"></div>
+      <div class="hero__box" id="hBox">
+        <img class="hero__front" src="assets/front.webp" width="2880" height="1620"
+             alt="La façade de l'onglerie Nacre à Malabata, Tanger, le soir : l'enseigne Nacre, manucure et pédicure, au-dessus des vitrines éclairées.">
+        <div class="hero__fade" aria-hidden="true"></div>
+        <div class="hero__ground" aria-hidden="true"></div>
+        <div class="hero__bay" aria-hidden="true">
+          <img class="hero__leaf hero__leaf--l" id="hLeafL" src="assets/door-l.webp" alt="">
+          <img class="hero__leaf hero__leaf--r" id="hLeafR" src="assets/door-r.webp" alt="">
+        </div>
+      </div>
+      <img class="hero__leaves" id="hLeaves" src="assets/leaves.webp" alt="" aria-hidden="true">
+
+      <div class="hero__copy" data-sc-cue="0 0.24 0">
+        <h1 class="display d-xl">Les plus beaux ongles de Tanger sont derrière cette&nbsp;porte.</h1>
+        <p class="lede">Manucure, pédicure, BIAB et nail art à Malabata.</p>
+        <a class="btn" href="#rdv">Book now</a>
+      </div>
+
+      <div class="hero__scrim" id="hScrim" aria-hidden="true"></div>
+      <div class="hero__in" data-sc-cue="0.6 0.98 0.1 0.06">
+        <h2 class="display d-md">Chez Nacre, <em>chaque détail compte.</em></h2>
+        <p class="lede">Velours terracotta, miroirs dorés, et tout un mur de couleurs. Installez-vous.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2 · LE NUANCIER : the peak. Authored silence, then the fan. -->
+  <section id="nuancier" class="fan-act" data-sc-act="pin" data-sc-span="3.6" aria-label="Le nuancier">
+    <div data-sc-stage>
+      <div class="fan-hush" data-sc-cue="0.02 0.27 0.05 0.06"><p>Maintenant,<br>la couleur.</p></div>
+
+      <div class="fan-head" data-sc-cue="0.3 1 0.1 0.03">
+        <h2 class="display d-md">Le nuancier <em>Nacre</em></h2>
+        <p class="body">Vingt-deux poses réalisées au salon, de la French BIAB au yellow chrome. Choisissez la vôtre.</p>
+      </div>
+
+      <div class="fan-pick" id="fanPick" data-sc-cue="0.36 1 0.1 0.03" aria-live="polite">
+        <div class="fan-pick__label">Votre look</div>
+        <div class="fan-pick__name" id="fpName">Touchez une lame</div>
+        <div class="fan-pick__meta" id="fpMeta">Survolez le nuancier, puis cliquez sur la pose qui vous plaît.</div>
+        <div class="fan-pick__ok"><svg aria-hidden="true"><use href="#i-check"/></svg>Ajouté à votre rendez-vous</div>
+      </div>
+
+      <div class="fan-wrap" id="fanWrap">
+        <div class="fan" id="fan" role="group" aria-label="Nuancier : 22 poses réalisées au salon"></div>
+      </div>
+      <div class="fan-steps" data-sc-cue="0.4 1 0.1 0.03">
+        <button type="button" id="fanPrev" aria-label="Look précédent"><svg><use href="#i-left"/></svg></button>
+        <button type="button" id="fanNext" aria-label="Look suivant"><svg><use href="#i-right"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3 · LES SOINS : lateral travel, each soin can be added to the card -->
+  <section id="soins" class="soins" data-sc-act="pan" data-sc-span="3.4" aria-label="Les soins">
+    <div data-sc-stage>
+      <div class="rail" data-sc-pan="0.04">
+        <div class="rail__lead">
+          <h2 class="display d-lg">Les soins</h2>
+          <p class="body">Des mains aux pieds, six façons de prendre soin de vous. Choisissez un soin, il s'ajoute à votre rendez-vous.</p>
+        </div>
+        <article class="soin">
+          <div class="soin__media"><img src="assets/photo/svc-japonaise.webp" alt="Manucure japonaise : ongles naturels polis au buffer, pâte rose." loading="lazy"></div>
+          <div class="soin__body"><h3>Manucure japonaise</h3><p>Soin naturel de l'ongle, sans vernis, pour une brillance rosée. Présentée par le salon comme 100% halal.</p><button class="chip" type="button" data-soin="Manucure japonaise" aria-pressed="false"><svg aria-hidden="true"><use href="#i-plus"/></svg>Choisir</button></div>
+        </article>
+        <article class="soin">
+          <div class="soin__media"><img src="assets/photo/svc-biab.webp" alt="Ongles carrés en BIAB, dégradé baby boomer." loading="lazy"></div>
+          <div class="soin__body"><h3>BIAB</h3><p>Un gel souple qui renforce l'ongle naturel. En nude, en French ou en baby boomer.</p><button class="chip" type="button" data-soin="BIAB" aria-pressed="false"><svg aria-hidden="true"><use href="#i-plus"/></svg>Choisir</button></div>
+        </article>
+        <article class="soin">
+          <div class="soin__media"><img src="assets/photo/svc-semi.webp" alt="Ongles amande rouge cerise en semi-permanent, une rose à la main." loading="lazy"></div>
+          <div class="soin__body"><h3>Semi-permanent</h3><p>La couleur qui tient, du nude au rouge laque.</p><button class="chip" type="button" data-soin="Vernis semi-permanent" aria-pressed="false"><svg aria-hidden="true"><use href="#i-plus"/></svg>Choisir</button></div>
+        </article>
+        <article class="soin">
+          <div class="soin__media"><img src="assets/photo/svc-nailart.webp" alt="Ongles amande en French multicolore : bleu, fuchsia, orange, lilas et vert." loading="lazy"></div>
+          <div class="soin__body"><h3>Nail art</h3><p>Chrome, cat eye, French colorée, fleurs peintes : le détail qui se remarque.</p><button class="chip" type="button" data-soin="Nail art" aria-pressed="false"><svg aria-hidden="true"><use href="#i-plus"/></svg>Choisir</button></div>
+        </article>
+        <article class="soin">
+          <div class="soin__media"><img src="assets/photo/svc-pedispa.webp" alt="Poste de pédicure spa : bassin moussant aux pétales de rose, fauteuil en velours terracotta." loading="lazy"></div>
+          <div class="soin__body"><h3>Pédicure spa</h3><p>Bain moussant, gommage et soin. « Détente totale », comme dit le salon.</p><button class="chip" type="button" data-soin="Pédicure spa" aria-pressed="false"><svg aria-hidden="true"><use href="#i-plus"/></svg>Choisir</button></div>
+        </article>
+        <article class="soin">
+          <div class="soin__media"><img src="assets/photo/svc-pieds2.webp" alt="Soin des pieds : crème réparatrice massée sur la voûte plantaire." loading="lazy"></div>
+          <div class="soin__body"><h3>Soins des pieds</h3><p>Soins médicaux pour talons secs et fissurés. Le résultat est juste en dessous.</p><button class="chip" type="button" data-soin="Soin des pieds" aria-pressed="false"><svg aria-hidden="true"><use href="#i-plus"/></svg>Choisir</button></div>
+        </article>
+        <div class="rail__end">
+          <p class="display d-md"><em>Vous hésitez ?</em></p>
+          <p class="body">Écrivez au salon, on vous conseille le soin qui vous va.</p>
+          <p style="margin-top:1.2rem"><a class="link" href="https://wa.me/34647591229" target="_blank" rel="noopener">WhatsApp · +34 647 591 229</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4 · HYGIÈNE : drag the before / after -->
+  <section id="hygiene" class="hyg" data-sc-act="flow" aria-label="Hygiène">
+    <div class="sc-wrap hyg__grid">
+      <div data-sc-in data-sc-stagger="70">
+        <h2 class="display d-lg">L'hygiène d'abord, <em>toujours.</em></h2>
+        <ul class="hyg__list">
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Stérilisation du matériel</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Gants de protection</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Produits naturels</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Professionnalisme</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Un cadre calme et zen</li>
+        </ul>
+        <blockquote class="hyg__quote">« Hygiène irréprochable (stérilisation, gants anti-UV) et un personnel aux petits soins. »<cite>Sara B., avis Google</cite></blockquote>
+      </div>
+      <figure style="margin:0" data-sc-in>
+        <div class="ba" id="ba" style="--x:50%">
+          <img src="assets/photo/ba-before.webp" alt="Talons secs et fissurés, avant le soin." loading="lazy">
+          <img class="ba__after" src="assets/photo/ba-after.webp" alt="Talons lisses et hydratés, après le soin." loading="lazy">
+          <span class="ba__tag ba__tag--b">Avant</span><span class="ba__tag ba__tag--a">Après</span>
+          <span class="ba__line"></span>
+          <span class="ba__knob"><svg aria-hidden="true"><use href="#i-lr"/></svg></span>
+          <input type="range" min="0" max="100" value="50" id="baRange" aria-label="Comparer avant et après le soin des pieds">
+        </div>
+        <figcaption class="ba__cap">Faites glisser. Soin des pieds, images d'illustration.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ 5 · LA FONDATRICE : layered portrait -->
+  <section id="founder" class="founder" data-sc-act="pin" data-sc-span="2.1" aria-label="La fondatrice">
+    <div data-sc-stage id="nStage">
+
+      <p class="founder__name" id="nName" data-sc-cue="0 1 0 0.04"><span>Lina</span><span>Sefrioui</span></p>
+      <div class="founder__fig">
+        <svg class="founder__mono" id="nMono" viewBox="0 0 240 360" aria-hidden="true" data-sc-parallax="-0.9"><use href="#jd"/></svg>
+        <span class="founder__floor" aria-hidden="true"></span>
+        <img class="founder__cut" id="nCut" src="assets/founder-full.webp" alt="Lina Sefrioui, fondatrice de Nacre, souriante, en abaya blanche brodée." width="584" height="1800" loading="lazy">
+      </div>
+      <div class="founder__text" data-sc-cue="0.12 1 0.14 0.04">
+        <!-- Founder quote. -->
+        <blockquote class="founder__quote">« Vos mains parlent avant vous. Faites-leur dire que vous êtes forte, libre et magnifique. »</blockquote>
+        <p class="founder__sig">Lina Sefrioui, fondatrice de Nacre</p>
+        <p class="founder__links">
+          <a class="link" href="#" target="_blank" rel="noopener">Instagram @lina.nacre</a>
+          <a class="link" href="#" target="_blank" rel="noopener">TikTok @lina.nacre</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6 · VOS MOTS : real reviews only -->
+  <section id="avis" class="avis" data-sc-act="flow" aria-label="Avis">
+    <figure class="avis__float avis__float--a" data-sc-parallax="-1.2" aria-hidden="true"><img src="assets/nails/069.webp" alt="" loading="lazy"></figure>
+    <figure class="avis__float avis__float--b" data-sc-parallax="-0.5" aria-hidden="true"><img src="assets/nails/072.webp" alt="" loading="lazy"></figure>
+    <div class="sc-wrap">
+      <div class="avis__big-wrap" data-sc-reveal="right" data-sc-reveal-at="0.08 0.36">
+        <h2 class="avis__big">« Sans hésiter, ma meilleure adresse ongles à Tanger. »</h2>
+      </div>
+      <p class="avis__src" data-sc-in>D'après le message d'une cliente, partagé par le salon sur Instagram.</p>
+
+      <div class="avis__grid" data-sc-stagger="70" data-sc-in>
+        <article class="rv">
+          <div class="rv__stars" aria-label="5 étoiles sur 5"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <blockquote>« Je recommande NACRE les yeux fermés : une équipe compétente, chaleureuse et vraiment accueillante. »</blockquote>
+          <footer><b>Nada Nassiri</b><span>Google</span></footer>
+        </article>
+        <article class="rv">
+          <div class="rv__stars" aria-label="5 étoiles sur 5"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <blockquote>« Belle découverte : un travail fin, soigné et élégant. »</blockquote>
+          <footer><b>Babi az</b><span>Google</span></footer>
+        </article>
+        <article class="rv">
+          <div class="rv__stars" aria-label="5 étoiles sur 5"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <blockquote>« Merci à Imane, douce, rapide et d'une précision rare. »</blockquote>
+          <footer><b>Sara B.</b><span>Google</span></footer>
+        </article>
+        <article class="rv">
+          <div class="rv__stars" aria-label="5 étoiles sur 5"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <blockquote>« Un cadre magnifique et apaisant. Manucure impeccable, et la pédicure, un vrai moment de détente. »</blockquote>
+          <footer><b>zineb tika</b><span>Google</span></footer>
+        </article>
+        <article class="rv">
+          <div class="rv__stars" aria-label="5 étoiles sur 5"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <blockquote>« Accueil parfait, équipe attentive, ambiance douce. On ressort comme neuve. »</blockquote>
+          <footer><b>Laila Haddane</b><span>Google</span></footer>
+        </article>
+      </div>
+
+      <div class="avis__meta" data-sc-in>
+        <p style="margin:0"><span class="avis__count"><span data-sc-count="0 34.1">0</span>k</span> <span class="body" style="display:inline">abonnées suivent le salon sur Instagram.</span></p>
+        <a class="link" href="#" target="_blank" rel="noopener">@nacre.tanger</a>
+        <a class="link" href="https://www.google.com/maps/search/?api=1&query=Malabata+Tanger" target="_blank" rel="noopener">Tous les avis sur Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 7 · LE RENDEZ-VOUS : the card completes, WhatsApp writes itself -->
+  <section id="rdv" class="rdv" aria-label="Réserver">
+    <div class="sc-wrap">
+      <div class="rdv__grid">
+        <div class="rdv__intro" data-sc-in data-sc-stagger="70">
+          <h2 class="display d-lg">Votre <em>rendez-vous</em></h2>
+          <p class="body">Choisissez un jour et une heure. Le message WhatsApp s'écrit tout seul avec votre look et votre soin, il ne reste qu'à l'envoyer.</p>
+          <div class="aside">
+            <img src="assets/photo/parfums.webp" alt="Étagères de parfums et coffrets au salon." loading="lazy">
+            <div>
+              <h3>Avant de partir</h3>
+              <p>Le salon propose aussi une sélection de parfums et de coffrets de grandes maisons. Demandez-les sur place.</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="card" id="bookForm" action="https://wa.me/34647591229" method="get" target="_blank" novalidate data-sc-in>
+          <div class="card__top">
+            <div class="card__look" id="cLookImg"><svg aria-hidden="true"><use href="#i-hand"/></svg></div>
+            <div>
+              <div class="card__k">Votre look</div>
+              <div class="card__lookname" id="cLookName">Pas encore choisi</div>
+              <div class="card__lookmeta" id="cLookMeta"><a class="link" href="#nuancier">Ouvrir le nuancier</a></div>
+            </div>
+          </div>
+          <div class="form">
+            <div class="field field--full">
+              <label for="fSoin">Soin</label>
+              <select id="fSoin" name="soin">
+                <option value="">Choisir un soin</option>
+                <option>Manucure japonaise</option>
+                <option>BIAB</option>
+                <option>Vernis semi-permanent</option>
+                <option>Nail art</option>
+                <option>Pédicure spa</option>
+                <option>Soin des pieds</option>
+                <option>Manucure et pédicure</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="fDate">Date souhaitée</label>
+              <input type="date" id="fDate" name="date" required>
+            </div>
+            <div class="field">
+              <label for="fHeure">Heure préférée</label>
+              <select id="fHeure" name="heure" required><option value="">Choisir</option></select>
+            </div>
+            <div class="field field--full">
+              <label for="fName">Votre prénom</label>
+              <input type="text" id="fName" name="prenom" autocomplete="given-name" placeholder="Facultatif">
+            </div>
+            <p class="form__err" id="fErr" role="alert"></p>
+            <div class="form__go">
+              <p class="form__note">Le salon confirme le créneau sur WhatsApp.</p>
+              <button class="btn" type="submit"><svg aria-hidden="true"><use href="#i-wa"/></svg>Book now</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <footer class="foot">
+        <svg class="foot__mark" viewBox="0 0 240 360" aria-hidden="true"><use href="#jd-solid"/></svg>
+        <div>
+          <address>
+            <b style="color:#F3E6D8;font-weight:500">Onglerie Nacre</b><br>
+            18 Avenue Malabata, Tanger<br>
+            Rez-de-chaussée, à côté du parc
+          </address>
+          <p style="margin:.6rem 0 0"><a class="link" href="https://www.google.com/maps/search/?api=1&query=Malabata+Tanger" target="_blank" rel="noopener">Itinéraire et horaires sur Google Maps</a></p>
+        </div>
+        <ul>
+          <li><a class="link" href="tel:+34647591229">+34 647 591 229</a></li>
+          <li><a class="link" href="https://wa.me/34647591229" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a class="link" href="#" target="_blank" rel="noopener">Instagram @nacre.tanger</a></li>
+          <li><a class="link" href="#" target="_blank" rel="noopener">Instagram @lina.nacre</a></li>
+          <li><a class="link" href="#" target="_blank" rel="noopener">TikTok @lina.nacre</a></li>
+        </ul>
+        <p class="foot__small">© <span id="yr">2026</span> Nacre, Tanger. Les photos d'ongles et de soins sont des réalisations du salon. Façade et intérieur illustrés d'après le salon.</p>
+      </footer>
+    </div>
+  </section>
+</main>
+
+<div class="sc-grain" aria-hidden="true"></div>
+
+<script src="scrollcraft.js"></script>
+<script>
+(function () {
+  'use strict';
+  var SC = ScrollCraft.mount(document.body) || {};
+  var reduce = ScrollCraft.reduce;
+  var fine = matchMedia('(hover: hover) and (pointer: fine)');
+  var clamp = function (x, a, b) { return x < a ? a : x > b ? b : x; };
+  var c01 = function (x) { return clamp(x, 0, 1); };
+  var eio = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  var eo = function (t) { return 1 - Math.pow(1 - t, 3); };
+  var P = function (el) { return parseFloat(el.style.getPropertyValue('--sc-p')) || 0; };
+  var inView = function (el) { var r = el.getBoundingClientRect(); return r.bottom > -innerHeight * .2 && r.top < innerHeight * 1.2; };
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  /* ------------------------------------------------ shared pointer ---- */
+  var mx = 0, my = 0, tmx = 0, tmy = 0;
+  addEventListener('pointermove', function (e) {
+    if (!fine.matches || reduce) return;
+    tmx = e.clientX / innerWidth * 2 - 1; tmy = e.clientY / innerHeight * 2 - 1;
+  }, { passive: true });
+
+  /* =============================================================== state */
+  var state = { look: null, soin: '' };
+  var ticket = document.getElementById('ticket');
+  function renderTicket() {
+    var tl = document.getElementById('t-look'), ts = document.getElementById('t-soin'), sw = document.getElementById('t-swatch');
+    if (state.look) {
+      tl.textContent = state.look.name; tl.classList.remove('is-empty');
+      sw.innerHTML = '<img alt="" src="' + state.look.src + '">';
+      document.getElementById('cLookImg').innerHTML = '<img alt="Votre look : ' + state.look.name + '" src="' + state.look.src + '">';
+      document.getElementById('cLookName').textContent = state.look.name;
+      document.getElementById('cLookMeta').innerHTML = state.look.meta + ' · <a class="link" href="#nuancier">changer</a>';
+    }
+    ticket.classList.remove('is-bump'); void ticket.offsetWidth; ticket.classList.add('is-bump');
+  }
+
+  /* ================================================================ HERO */
+  var hero = document.getElementById('arrivee');
+  var hBox = document.getElementById('hBox'), hIn = document.getElementById('hInside');
+  var hL = document.getElementById('hLeafL'), hR = document.getElementById('hLeafR');
+  var hLeaves = document.getElementById('hLeaves'), hSpill = document.getElementById('hSpill'), hScrim = document.getElementById('hScrim');
+  var DX = .2973, DY = .6498;           // door centre, fraction of the facade image
+  var HOLE_W = .144, HOLE_H = .3134;    // door opening, fraction of the facade image
+  var G = { W: 0, H: 0, L: 0, T: 0, dx: 0, dy: 0, s0: 1 };
+  function heroLayout() {
+    var vw = innerWidth, vh = innerHeight, W, H, L, T;
+    if (vw < 700) {                       // phone: the whole sign readable, sky above for the headline
+      W = vw * 1.42; H = W * 9 / 16; L = vw / 2 - W * .495; T = vh * .40;
+    } else {
+      H = Math.min(vw * 9 / 16, vh * .72); W = H * 16 / 9; L = (vw - W) / 2; T = vh - H;
+    }
+    G.W = W; G.H = H; G.L = L; G.T = T;
+    G.dx = L + W * DX; G.dy = T + H * DY;
+    // interior plane starts just larger than the doorway it is seen through
+    G.s0 = Math.max(HOLE_W * W / vw, HOLE_H * H / vh) * 1.9;
+    hBox.style.width = W + 'px'; hBox.style.height = H + 'px';
+    hBox.style.left = L + 'px'; hBox.style.top = T + 'px';
+  }
+  heroLayout(); addEventListener('resize', heroLayout);
+
+  function heroFrame() {
+    var p = P(hero), vw = innerWidth, vh = innerHeight;
+    var o = eio(c01((p - .03) / .2));          // doors slide open
+    var k = eio(c01((p - .12) / .44));         // the walk through the doorway
+    var zoom = Math.pow(9.5, k);
+    var ox = reduce ? 0 : mx, oy = reduce ? 0 : my;
+    hScrim.style.opacity = c01((p - .54) / .08).toFixed(3);
+    if (reduce) {
+      // no travel: once the headline has gone, the facade dissolves into the salon
+      k = c01((p - .27) / .25);
+      hBox.style.transform = 'none'; hBox.style.opacity = String(1 - k);
+      hIn.style.transform = 'none'; hIn.style.opacity = String(k);
+      hL.style.transform = hR.style.transform = 'none';
+      hLeaves.style.opacity = String(1 - k); hSpill.style.opacity = '0';
+      return;
+    }
+    // facade: zoom about the doors, doors drift to the centre of the screen
+    var tx = (vw / 2 - G.dx) * k - ox * 10 * (1 - k), ty = (vh / 2 - G.dy) * k - oy * 6 * (1 - k);
+    hBox.style.transform = 'translate3d(' + tx.toFixed(1) + 'px,' + ty.toFixed(1) + 'px,0) scale(' + zoom.toFixed(4) + ')';
+    hBox.style.opacity = String(1 - c01((k - .9) / .1));
+    // sliding doors
+    hL.style.transform = 'translate3d(' + (-o * 96).toFixed(2) + '%,0,0)';
+    hR.style.transform = 'translate3d(' + (o * 96).toFixed(2) + '%,0,0)';
+    // interior: grows slower than the facade, centred on the doorway...
+    var cx = G.dx + tx, cy = G.dy + ty;
+    // ...but never smaller than the part of the doorway that is on screen, so
+    // no night sky can ever show through the door above or beside the salon.
+    var hw = HOLE_W * G.W * zoom / 2, hh = HOLE_H * G.H * zoom / 2;
+    var vl = Math.max(cx - hw, 0), vr = Math.min(cx + hw, vw), vt = Math.max(cy - hh, 0), vb = Math.min(cy + hh, vh);
+    var need = Math.max(2 * Math.max(cx - vl, vr - cx) / vw, 2 * Math.max(cy - vt, vb - cy) / vh) * 1.03;
+    var si = Math.max(Math.pow(G.s0, 1 - k), need);
+    hIn.style.transform = 'translate3d(' + (cx - vw / 2).toFixed(1) + 'px,' + (cy - vh / 2).toFixed(1) + 'px,0) scale(' + si.toFixed(4) + ')';
+    // warm light spilling out of the open doors
+    hSpill.style.opacity = (o * (1 - k) * .9).toFixed(3);
+    hSpill.style.transform = 'translate3d(' + cx.toFixed(1) + 'px,' + cy.toFixed(1) + 'px,0) scale(' + (0.35 + k * 2).toFixed(3) + ')';
+    // foreground leaves pass the camera fastest
+    // leaves only ever travel outward (left and down); pointer adds a few pixels, never more
+    var lx = -k * vw * .34 - Math.abs(ox) * 14, ly = k * vh * .18 + Math.abs(oy) * 8;
+    hLeaves.style.transform = 'translate3d(' + lx.toFixed(1) + 'px,' + ly.toFixed(1) + 'px,0) scale(' + (1 + k * 1.1).toFixed(3) + ')';
+    hLeaves.style.opacity = String(1 - c01((k - .45) / .35));
+  }
+
+  /* ============================================================ NUANCIER */
+  var LOOKS = [
+    ['089', 'BIAB French', 'Carré · BIAB', '#F3E4DC'],
+    ['066', 'White pearl chrome', 'Amande · chrome', '#E9E7EE'],
+    ['091', 'Baby boomer', 'Amande · dégradé', '#F1D9CF'],
+    ['083', 'Aura irisée', 'Amande · nail art', '#D9D3E6'],
+    ['077', 'Lilas nacré', 'Court · chrome', '#C9B6D6'],
+    ['054', 'Lilas & French bordeaux', 'Carré court', '#E5C9EE'],
+    ['080', 'French fuchsia', 'Court arrondi', '#F0418E'],
+    ['082', 'Rose & fleurs', 'Court · nail art', '#F2B8C4'],
+    ['098', 'Rose fuchsia', 'Court · semi-permanent', '#FF2E93'],
+    ['069', 'Red cat eye', 'Amande · cat eye', '#B2141C'],
+    ['065', 'Rouge laque', 'Amande longue', '#D0101A'],
+    ['093', 'Perfect red', 'Ovale court', '#D3141E'],
+    ['058', 'Bordeaux', 'Carré court', '#7E1224'],
+    ['063', 'Bordeaux profond', 'Amande', '#5E0F1E'],
+    ['068', 'Cat eye prune', 'Amande longue · cat eye', '#3A1F2B'],
+    ['020', 'Chocolat & pois', 'Amande · nail art', '#5A2E1C'],
+    ['086', 'French noir & or', 'Amande · nail art', '#1E1A18'],
+    ['053', 'Noir graphique', 'Amande · nail art', '#2A2728'],
+    ['055', 'Noir pailleté', 'Court · paillettes', '#35343A'],
+    ['057', 'Ombré bleu glacier', 'Amande longue', '#9FC8E8'],
+    ['072', 'Pistache', 'Amande', '#B9C98E'],
+    ['074', 'Yellow chrome', 'Amande · chrome', '#E4D27A']
+  ];
+  var fanAct = document.getElementById('nuancier'), fan = document.getElementById('fan'), fanWrap = document.getElementById('fanWrap');
+  var blades = [], N = LOOKS.length, picked = -1, focusA = 0, focusT = 0, infl = 0, inflT = 0, rot = 0;
+  LOOKS.forEach(function (L, i) {
+    var b = document.createElement('button');
+    b.type = 'button'; b.className = 'blade';
+    b.setAttribute('aria-pressed', 'false');
+    b.setAttribute('aria-label', L[1] + ', ' + L[2]);
+    b.style.setProperty('--c', L[3]);
+    b.innerHTML = '<span class="blade__body"><img class="blade__img" alt="" loading="lazy" decoding="async" src="assets/nails/' + L[0] + '.webp"><span class="blade__name">' + L[1] + '</span><span class="blade__dot"></span></span>';
+    b.addEventListener('click', function () { pick(i); });
+    b.addEventListener('focus', function () { focusT = angleOf(i, 1); inflT = 1; });
+    b.addEventListener('blur', function () { inflT = 0; });
+    fan.appendChild(b);
+    blades.push({ el: b, a: 0, lift: 0, z: i });
+  });
+  var rivet = document.createElement('span'); rivet.className = 'rivet'; fan.appendChild(rivet);
+  function spread() { return innerWidth < 860 ? 60 : 78; }
+  function angleOf(i, open) { var S = spread(); return (-S + 2 * S * i / (N - 1)) * open; }
+  function pick(i) {
+    if (picked >= 0) { blades[picked].el.classList.remove('is-picked'); blades[picked].el.setAttribute('aria-pressed', 'false'); }
+    picked = i; var L = LOOKS[i];
+    blades[i].el.classList.add('is-picked'); blades[i].el.setAttribute('aria-pressed', 'true');
+    document.getElementById('fpName').textContent = L[1];
+    document.getElementById('fpMeta').textContent = L[2];
+    document.getElementById('fanPick').classList.add('is-picked');
+    state.look = { name: L[1], meta: L[2], src: 'assets/nails/' + L[0] + '.webp' };
+    focusT = angleOf(i, 1); inflT = Math.max(inflT, .6);
+    renderTicket();
+  }
+  document.getElementById('fanPrev').addEventListener('click', function () { pick(picked <= 0 ? N - 1 : picked - 1); });
+  document.getElementById('fanNext').addEventListener('click', function () { pick(picked < 0 || picked >= N - 1 ? 0 : picked + 1); });
+  // the pointer's angle around the rivet becomes the fan's focus
+  function pointerAngle(x, y) {
+    var r = fan.getBoundingClientRect();
+    return Math.atan2(x - r.left, r.top - y) * 180 / Math.PI;
+  }
+  fanWrap.addEventListener('pointermove', function (e) { focusT = pointerAngle(e.clientX, e.clientY); inflT = 1; });
+  fanWrap.addEventListener('pointerleave', function () { inflT = picked >= 0 ? .6 : 0; if (picked >= 0) focusT = angleOf(picked, 1); });
+  fanWrap.addEventListener('pointerdown', function (e) { if (e.pointerType !== 'mouse') { focusT = pointerAngle(e.clientX, e.clientY); inflT = 1; } });
+
+  function fanFrame() {
+    var p = P(fanAct), mob = innerWidth < 860;
+    var rise = reduce ? c01((p - .24) / .08) : eo(c01((p - .2) / .16));
+    var open = reduce ? 1 : eio(c01((p - .26) / .3));
+    var bh = fan.firstChild ? fan.firstChild.offsetHeight : 400;
+    fan.style.opacity = String(rise);
+    fan.style.transform = 'translate3d(0,' + ((1 - rise) * 40).toFixed(1) + 'vh,0)';
+    focusA += (focusT - focusA) * .16; infl += (inflT - infl) * .12;
+    rot += ((fine.matches && !reduce ? mx * 4 : 0) - rot) * .08;
+    var order = [];
+    for (var i = 0; i < N; i++) {
+      var B = blades[i];
+      var jitter = ((i * 37) % 7 - 3) * .6;
+      var a = angleOf(i, open) + jitter * (1 - open) + rot * open;
+      var d = (a - focusA) / (mob ? 9 : 7.5);
+      var g = Math.exp(-d * d) * infl * open;
+      var lift = g * bh * (mob ? .12 : .14) + (i === picked ? bh * .08 * open : 0);
+      if (reduce) lift = i === picked ? bh * .06 : 0;
+      B.el.style.transform = 'rotate(' + a.toFixed(2) + 'deg) translate3d(0,' + (-lift).toFixed(1) + 'px,0)';
+      order.push([g + (i === picked ? 2 : 0), i]);
+    }
+    order.sort(function (x, y) { return x[0] - y[0]; });
+    for (var j = 0; j < order.length; j++) blades[order[j][1]].el.style.zIndex = String(j + 1);
+  }
+
+  /* =============================================================== SOINS */
+  // One setter keeps the rail chips, the card menu, the form and the ticket in step.
+  function setSoin(v) {
+    state.soin = v;
+    Array.prototype.forEach.call(document.querySelectorAll('[data-soin]'), function (o) {
+      var on = o.getAttribute('data-soin') === v;
+      o.setAttribute('aria-pressed', on ? 'true' : 'false'); o.lastChild.textContent = on ? 'Choisi' : 'Choisir';
+    });
+    Array.prototype.forEach.call(document.querySelectorAll('[data-pick]'), function (o) { o.setAttribute('aria-checked', o.getAttribute('data-pick') === v ? 'true' : 'false'); });
+    document.getElementById('fSoin').value = v;
+    var ts = document.getElementById('t-soin'); ts.textContent = v || 'À choisir'; ts.classList.toggle('is-empty', !v);
+    if (v) renderTicket();
+  }
+  Array.prototype.forEach.call(document.querySelectorAll('[data-soin]'), function (btn) {
+    btn.addEventListener('click', function () { setSoin(btn.getAttribute('data-soin')); });
+  });
+  var tBtn = document.getElementById('t-soinBtn'), tMenu = document.getElementById('t-menu');
+  function menu(open) {
+    tMenu.hidden = !open; tBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (open) (tMenu.querySelector('[aria-checked="true"]') || tMenu.querySelector('button')).focus();
+  }
+  tBtn.addEventListener('click', function (e) { e.stopPropagation(); menu(tMenu.hidden); });
+  Array.prototype.forEach.call(tMenu.querySelectorAll('[data-pick]'), function (o) {
+    o.addEventListener('click', function () { setSoin(o.getAttribute('data-pick')); menu(false); tBtn.focus(); });
+  });
+  tMenu.addEventListener('keydown', function (e) {
+    var items = Array.prototype.slice.call(tMenu.querySelectorAll('button')), i = items.indexOf(document.activeElement);
+    if (e.key === 'ArrowDown') { e.preventDefault(); items[(i + 1) % items.length].focus(); }
+    if (e.key === 'ArrowUp') { e.preventDefault(); items[(i - 1 + items.length) % items.length].focus(); }
+  });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !tMenu.hidden) { menu(false); tBtn.focus(); } });
+  document.addEventListener('click', function (e) { if (!tMenu.hidden && !tMenu.contains(e.target)) menu(false); });
+
+  /* ======================================================= BEFORE/AFTER */
+  var ba = document.getElementById('ba'), baR = document.getElementById('baRange');
+  baR.addEventListener('input', function () { ba.style.setProperty('--x', baR.value + '%'); });
+
+  /* ============================================================= FOUNDER */
+  var nStage = document.getElementById('nStage'), nCut = document.getElementById('nCut'), nName = document.getElementById('nName');
+  var founder = document.getElementById('founder');
+  function founderFrame() {
+    if (reduce) return;
+    var p = P(founder);
+    nCut.style.transform = 'translate3d(' + (-mx * 10).toFixed(1) + 'px,' + ((1 - eo(c01(p / .5))) * 40).toFixed(1) + 'px,0)';
+  }
+
+  /* ============================================================ BOOKING */
+  var fDate = document.getElementById('fDate'), fHeure = document.getElementById('fHeure');
+  var today = new Date(); var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  fDate.min = today.getFullYear() + '-' + pad(today.getMonth() + 1) + '-' + pad(today.getDate());
+  for (var h = 10; h <= 20; h++) {
+    ['00', '30'].forEach(function (m) {
+      if (h === 20 && m === '30') return;
+      var o = document.createElement('option'); o.value = h + ':' + m; o.textContent = h + 'h' + m; fHeure.appendChild(o);
+    });
+  }
+  document.getElementById('fSoin').addEventListener('change', function (e) { setSoin(e.target.value); });
+  document.getElementById('bookForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var err = document.getElementById('fErr'); err.textContent = '';
+    fDate.removeAttribute('aria-invalid'); fHeure.removeAttribute('aria-invalid');
+    if (!fDate.value) { fDate.setAttribute('aria-invalid', 'true'); err.textContent = 'Choisissez une date.'; fDate.focus(); return; }
+    if (fDate.value < fDate.min) { fDate.setAttribute('aria-invalid', 'true'); err.textContent = 'Choisissez une date à partir d’aujourd’hui.'; fDate.focus(); return; }
+    if (!fHeure.value) { fHeure.setAttribute('aria-invalid', 'true'); err.textContent = 'Choisissez une heure.'; fHeure.focus(); return; }
+    var d = new Date(fDate.value + 'T12:00:00');
+    var dateTxt = d.toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+    var name = document.getElementById('fName').value.trim();
+    var soin = document.getElementById('fSoin').value;
+    var lines = ['Bonjour Nacre, je souhaite prendre rendez-vous.', ''];
+    if (soin) lines.push('Soin : ' + soin);
+    if (state.look) lines.push('Look : ' + state.look.name + ' (' + state.look.meta + ')');
+    lines.push('Date souhaitée : ' + dateTxt);
+    lines.push('Heure préférée : ' + fHeure.value.replace(':', 'h'));
+    if (name) lines.push('Prénom : ' + name);
+    lines.push('', 'Merci !');
+    window.open('https://wa.me/34647591229?text=' + encodeURIComponent(lines.join('\n')), '_blank', 'noopener');
+  });
+
+  /* ======================================================== ticket view */
+  var rdv = document.getElementById('rdv');
+  function ticketFrame() {
+    var r = rdv.getBoundingClientRect();
+    ticket.classList.toggle('is-hidden', r.top < innerHeight * .55);
+  }
+
+  /* ================================================================ loop */
+  function loop() {
+    mx += (tmx - mx) * .07; my += (tmy - my) * .07;
+    if (inView(hero)) heroFrame();
+    if (inView(fanAct)) fanFrame();
+    if (inView(founder)) founderFrame();
+    ticketFrame();
+    requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+})();
+</script>
+</body>
+</html>
