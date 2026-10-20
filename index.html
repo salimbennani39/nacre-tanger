@@ -641,7 +641,7 @@ body { background: var(--sc-canvas); }
         <div class="rail__end">
           <p class="display d-md"><em>Vous hésitez ?</em></p>
           <p class="body">Écrivez au salon, on vous conseille le soin qui vous va.</p>
-          <p style="margin-top:1.2rem"><a class="link" href="https://wa.me/34647591229" target="_blank" rel="noopener">WhatsApp · +34 647 591 229</a></p>
+          <p style="margin-top:1.2rem"><a class="link" href="https://salimbennani39.github.io/showcase/404.html" target="_blank" rel="noopener">WhatsApp · +34 647 591 229</a></p>
         </div>
       </div>
     </div>
@@ -759,7 +759,7 @@ body { background: var(--sc-canvas); }
           </div>
         </div>
 
-        <form class="card" id="bookForm" action="https://wa.me/34647591229" method="get" target="_blank" novalidate data-sc-in>
+        <form class="card" id="bookForm" action="https://salimbennani39.github.io/showcase/404.html" method="get" target="_blank" novalidate data-sc-in>
           <div class="card__top">
             <div class="card__look" id="cLookImg"><svg aria-hidden="true"><use href="#i-hand"/></svg></div>
             <div>
@@ -814,8 +814,8 @@ body { background: var(--sc-canvas); }
           <p style="margin:.6rem 0 0"><a class="link" href="https://www.google.com/maps/search/?api=1&query=Malabata+Tanger" target="_blank" rel="noopener">Itinéraire et horaires sur Google Maps</a></p>
         </div>
         <ul>
-          <li><a class="link" href="tel:+34647591229">+34 647 591 229</a></li>
-          <li><a class="link" href="https://wa.me/34647591229" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a class="link" href="https://salimbennani39.github.io/showcase/404.html">+34 647 591 229</a></li>
+          <li><a class="link" href="https://salimbennani39.github.io/showcase/404.html" target="_blank" rel="noopener">WhatsApp</a></li>
           <li><a class="link" href="#" target="_blank" rel="noopener">Instagram @nacre.tanger</a></li>
           <li><a class="link" href="#" target="_blank" rel="noopener">Instagram @lina.nacre</a></li>
           <li><a class="link" href="#" target="_blank" rel="noopener">TikTok @lina.nacre</a></li>
@@ -1096,7 +1096,7 @@ body { background: var(--sc-canvas); }
     lines.push('Heure préférée : ' + fHeure.value.replace(':', 'h'));
     if (name) lines.push('Prénom : ' + name);
     lines.push('', 'Merci !');
-    window.open('https://wa.me/34647591229?text=' + encodeURIComponent(lines.join('\n')), '_blank', 'noopener');
+    window.open('https://salimbennani39.github.io/showcase/404.html' + encodeURIComponent(lines.join('\n')), '_blank', 'noopener');
   });
 
   /* ======================================================== ticket view */
@@ -1118,10 +1118,12 @@ body { background: var(--sc-canvas); }
   requestAnimationFrame(loop);
 })();
 </script>
-<script>/* showcase: links that lead nowhere open the Showcase 404 */
+<script>/* showcase: links that lead nowhere, and booking / WhatsApp / call links, open the Showcase 404 */
 (()=>{const U='https://salimbennani39.github.io/showcase/404.html';
-const dead=a=>{const h=(a.getAttribute('href')||'').trim();return h===''||h==='#'||h==='#!'||/^javascript:/i.test(h)};
-addEventListener('click',e=>{if(e.defaultPrevented)return;const a=e.target.closest&&e.target.closest('a');
-if(a&&dead(a)){e.preventDefault();location.href=U;}});})();</script>
+const dead=a=>{const h=(a.getAttribute('href')||'').trim();return h===''||h==='#'||h==='#!'||/^javascript:/i.test(h)||/^(tel:|sms:|mailto:|https?:\/\/(api\.|web\.)?(wa\.me|whatsapp\.com))/i.test(h)};
+addEventListener('click',e=>{const a=e.target.closest&&e.target.closest('a');if(!a)return;
+const h=(a.getAttribute('href')||'').trim();const contact=/^(tel:|sms:|mailto:|https?:)/i.test(h);
+if(dead(a)&&(contact||!e.defaultPrevented)){e.preventDefault();e.stopImmediatePropagation();location.href=U;}},true);
+const o=window.open;window.open=function(u){if(/(wa\.me|whatsapp\.com|^tel:)/i.test(String(u||'')))return location.href=U,null;return o.apply(this,arguments)};})();</script>
 </body>
 </html>
